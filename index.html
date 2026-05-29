@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayukoso Bonsu | Cybersecurity Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #050816;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .glow {
+      box-shadow: 0 0 30px rgba(59,130,246,0.3);
+    }
+
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #60a5fa, #22d3ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-grid {
+      background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="fixed w-full z-50 bg-[#050816]/90 backdrop-blur-lg border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold gradient-text">Ayukoso Bonsu</h1>
+
+      <div class="hidden md:flex gap-8 text-sm font-medium text-gray-300">
+        <a href="#about" class="hover:text-blue-400 transition">About</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+        <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-grid min-h-screen flex items-center px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+
+      <div>
+        <p class="uppercase tracking-[4px] text-blue-400 text-sm mb-4">Cybersecurity & IT Support</p>
+
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          Ayukoso <span class="gradient-text">Bonsu</span>
+        </h1>
+
+        <p class="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
+          Cybersecurity-focused IT student with hands-on experience in technical support,
+          workflow automation, network analysis, and C2 attack simulation. Passionate
+          about building secure systems that serve people ethically and effectively.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects" class="px-6 py-3 rounded-2xl bg-blue-600 hover:bg-blue-700 transition font-semibold glow">
+            View Projects
+          </a>
+
+          <a href="mailto:bessongayukoso@gmail.com" class="px-6 py-3 rounded-2xl border border-white/20 hover:border-blue-400 transition">
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="card glow rounded-3xl p-10 w-full max-w-md">
+          <div class="space-y-5">
+            <div>
+              <p class="text-gray-400 text-sm">Location</p>
+              <h3 class="text-xl font-semibold">Yaoundé, Cameroon</h3>
+            </div>
+
+            <div>
+              <p class="text-gray-400 text-sm">Education</p>
+              <h3 class="text-xl font-semibold">Ensign College</h3>
+              <p class="text-gray-300 text-sm">Information Technology — Cybersecurity</p>
+            </div>
+
+            <div>
+              <p class="text-gray-400 text-sm">Focus Areas</p>
+              <div class="flex flex-wrap gap-2 mt-2">
+                <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Cybersecurity</span>
+                <span class="bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-sm">Automation</span>
+                <span class="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-sm">Networking</span>
+                <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">IT Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-14">
+        <p class="text-blue-400 uppercase tracking-[3px] text-sm mb-2">About Me</p>
+        <h2 class="text-4xl font-bold">Who I Am</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="card rounded-3xl p-8">
+          <p class="text-gray-300 leading-relaxed text-lg">
+            I am an Information Technology student specializing in cybersecurity with a strong
+            interest in digital defense, technical support, workflow automation, and ethical
+            technology use. My experience combines hands-on technical work with a people-first
+            mindset.
+          </p>
+        </div>
+
+        <div class="card rounded-3xl p-8">
+          <p class="text-gray-300 leading-relaxed text-lg">
+            Through projects involving C2 simulation, packet analysis, and automated onboarding
+            systems, I have developed both analytical and operational skills. I believe technical
+            knowledge carries responsibility, and I aim to use technology as a tool for service,
+            security, and stewardship.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-24 px-6 bg-white/5">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="mb-14">
+        <p class="text-blue-400 uppercase tracking-[3px] text-sm mb-2">Technical Skills</p>
+        <h2 class="text-4xl font-bold">Technologies & Tools</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="card rounded-3xl p-6">
+          <h3 class="text-xl font-semibold mb-5">Cybersecurity</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li>Wireshark</li>
+            <li>Threat Analysis</li>
+            <li>Incident Response</li>
+            <li>C2 Simulation Labs</li>
+            <li>DNS Monitoring</li>
+          </ul>
+        </div>
+
+        <div class="card rounded-3xl p-6">
+          <h3 class="text-xl font-semibold mb-5">Networking</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li>Cisco Packet Tracer</li>
+            <li>Network Topologies</li>
+            <li>Packet Analysis</li>
+            <li>Traffic Monitoring</li>
+          </ul>
+        </div>
+
+        <div class="card rounded-3xl p-6">
+          <h3 class="text-xl font-semibold mb-5">Automation</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li>Go High Level</li>
+            <li>Workflow Automation</li>
+            <li>CRM Systems</li>
+            <li>Process Mapping</li>
+          </ul>
+        </div>
+
+        <div class="card rounded-3xl p-6">
+          <h3 class="text-xl font-semibold mb-5">IT Support</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li>Remote Troubleshooting</li>
+            <li>System Maintenance</li>
+            <li>Technical Documentation</li>
+            <li>Client Support</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="mb-14">
+        <p class="text-blue-400 uppercase tracking-[3px] text-sm mb-2">Portfolio</p>
+        <h2 class="text-4xl font-bold">Featured Projects</h2>
+      </div>
+
+      <div class="space-y-10">
+
+        <div class="card rounded-3xl p-8 hover:scale-[1.01] transition duration-300">
+          <div class="flex flex-wrap gap-3 mb-5">
+            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Cybersecurity</span>
+            <span class="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm">Threat Analysis</span>
+            <span class="bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-sm">Wireshark</span>
+          </div>
+
+          <h3 class="text-3xl font-bold mb-4">C2 Attack Simulation & Analysis</h3>
+
+          <p class="text-gray-300 leading-relaxed mb-6">
+            Conducted in-depth research into Command and Control attack structures, attacker communication channels,
+            and detection methods. Built and executed simulated server-client C2 scripts inside a controlled lab
+            environment while analyzing traffic patterns using Wireshark.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Key Skills Applied</h4>
+              <ul class="text-gray-300 space-y-2">
+                <li>• Threat research & analysis</li>
+                <li>• Packet inspection</li>
+                <li>• Incident response planning</li>
+                <li>• Defensive security strategy</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Outcome</h4>
+              <p class="text-gray-300">
+                Produced an enhanced cybersecurity research paper integrating ethical use principles,
+                SolarWinds case-study analysis, and Wireshark-based detection techniques.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rounded-3xl p-8 hover:scale-[1.01] transition duration-300">
+          <div class="flex flex-wrap gap-3 mb-5">
+            <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">Automation</span>
+            <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">Go High Level</span>
+            <span class="bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-sm">Workflow Design</span>
+          </div>
+
+          <h3 class="text-3xl font-bold mb-4">Automated Interview Scheduling & Onboarding System</h3>
+
+          <p class="text-gray-300 leading-relaxed mb-6">
+            Designed and implemented a complete automated workflow for candidate processing,
+            interview scheduling, onboarding delivery, and communication sequencing.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Key Skills Applied</h4>
+              <ul class="text-gray-300 space-y-2">
+                <li>• Workflow automation</li>
+                <li>• CRM system design</li>
+                <li>• Process mapping</li>
+                <li>• Tool integration</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Outcome</h4>
+              <p class="text-gray-300">
+                Reduced manual coordination effort while improving consistency and user experience
+                throughout the hiring and onboarding process.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rounded-3xl p-8 hover:scale-[1.01] transition duration-300">
+          <div class="flex flex-wrap gap-3 mb-5">
+            <span class="bg-orange-500/20 text-orange-300 px-3 py-1 rounded-full text-sm">Networking</span>
+            <span class="bg-sky-500/20 text-sky-300 px-3 py-1 rounded-full text-sm">Packet Tracer</span>
+            <span class="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-sm">Analysis</span>
+          </div>
+
+          <h3 class="text-3xl font-bold mb-4">Network Simulation & Packet Analysis Lab</h3>
+
+          <p class="text-gray-300 leading-relaxed mb-6">
+            Designed and validated network topologies using Cisco Packet Tracer and analyzed live network
+            traffic using Wireshark to identify anomalies and packet behaviors.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Tools Used</h4>
+              <ul class="text-gray-300 space-y-2">
+                <li>• Cisco Packet Tracer</li>
+                <li>• Wireshark</li>
+                <li>• DNS Analysis</li>
+                <li>• Network Monitoring</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-blue-400 mb-2">Focus</h4>
+              <p class="text-gray-300">
+                Strengthened practical understanding of traffic flow, topology validation,
+                and network anomaly detection.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-24 px-6 bg-white/5">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="mb-14">
+        <p class="text-blue-400 uppercase tracking-[3px] text-sm mb-2">Experience</p>
+        <h2 class="text-4xl font-bold">Professional Journey</h2>
+      </div>
+
+      <div class="space-y-8">
+
+        <div class="card rounded-3xl p-8">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-3 mb-4">
+            <h3 class="text-2xl font-semibold">Technical Support Specialist</h3>
+            <span class="text-blue-400">Elevate Côte d'Ivoire — 2025</span>
+          </div>
+
+          <p class="text-gray-300 leading-relaxed">
+            Provided technical support, built websites using Go High Level, resolved client issues,
+            and implemented troubleshooting procedures that improved client onboarding and operational efficiency.
+          </p>
+        </div>
+
+        <div class="card rounded-3xl p-8">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-3 mb-4">
+            <h3 class="text-2xl font-semibold">Computer Science Teacher</h3>
+            <span class="text-blue-400">Nina Angels Academy — 2022–2025</span>
+          </div>
+
+          <p class="text-gray-300 leading-relaxed">
+            Taught computer science concepts, improved student success rates significantly,
+            and introduced technology solutions that improved the learning experience.
+          </p>
+        </div>
+
+        <div class="card rounded-3xl p-8">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-3 mb-4">
+            <h3 class="text-2xl font-semibold">PC Technician / Administrator</h3>
+            <span class="text-blue-400">Nina Angels Academy — 2022–2025</span>
+          </div>
+
+          <p class="text-gray-300 leading-relaxed">
+            Maintained school computer systems, reduced downtime through preventive maintenance,
+            and ensured smooth operation of computer lab resources.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+
+      <p class="text-blue-400 uppercase tracking-[3px] text-sm mb-2">Contact</p>
+      <h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
+
+      <p class="text-gray-300 text-lg mb-10 leading-relaxed">
+        I am currently seeking opportunities in cybersecurity, technical support,
+        networking, and workflow automation.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-5">
+
+        <a href="mailto:bessongayukoso@gmail.com"
+           class="card px-6 py-4 rounded-2xl hover:border-blue-400 transition">
+          Email Me
+        </a>
+
+        <a href="https://www.linkedin.com/in/bonsubessong"
+           target="_blank"
+           class="card px-6 py-4 rounded-2xl hover:border-blue-400 transition">
+          LinkedIn
+        </a>
+
+        <a href="https://github.com/"
+           target="_blank"
+           class="card px-6 py-4 rounded-2xl hover:border-blue-400 transition">
+          GitHub
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-8 px-6 text-center text-gray-500">
+    <p>© 2026 Ayukoso Bonsu — Cybersecurity Portfolio</p>
+  </footer>
+
+</body>
+</html>
